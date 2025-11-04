@@ -17,7 +17,7 @@ body {
 
     background-image: url("obloha.png");
     background-repeat: repeat-y;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-attachment: scroll;
     background-position: top center;
 }
@@ -33,7 +33,6 @@ body {
     bottom: 0;
     /* z-index: 1; */
 }
-
 
 main {width: 100%;}
 
@@ -90,6 +89,7 @@ h2 {
 }
 
 .box {
+    position: relative;
     /* border: 3px solid #333; */
     /* border-radius: 2px; */
     padding: 0px 20px 20px 20px;
@@ -98,8 +98,21 @@ h2 {
     color: #ddd;
 }
 
+.cedule img {
+    position: absolute;
+    right: -44%;
+    top: 0%;
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    max-height: 90%;
+    pointer-events: none;
+    z-index: 0;
+}
+
 #roof1 {width: 80%;}
 #box1 {width: 48%;}
+#cedule1 {width: 100%;}
 
 #roof2 {width: 84%;}
 #box2 {width: 52%;}
@@ -133,6 +146,9 @@ h2 {
                 <p>Před obdobím Meidži bylo Japonsko feudálním systémem a moc měla spíše vrchní vrstva společnosti a vojsko než šógun Tokungawa. Vládce byl symbolem.</p>
                 <p>Obchod s ostatními mocnostmi byl omezen, Japonsko bylo izolované (politika sakoku, kdy Japonsko minimalizovalo styky s ostatními státy a kontrolovalo zahraniční obchod), ale v roce 1853 přiměl americký admirál Perry Japonsko otevřít přístavy.</p>
                 <p>Vládla silná hierarchie, která rozdělovala společnost na obchodníky, řemeslníky, rolníky a samuraje, kde samuraj bylo velmi prestižní postavení. Ekonomika byla hlavně zemědělská. Japonsko bylo méně technologicky vyvinuté než některé západní kolonie. Jako jeden z faktorů, které brzdily rozvoj, byl považován feudalismus, takže změna nemohla být daleko.</p>
+                <div class="cedule">
+                    <img src="cedule1.png" alr="cedule1" id="cedule1">
+                </div>
             </div>
 
             <div class="floor" id="roof2"><img src="strecha2.png" alt="střecha"></div>
